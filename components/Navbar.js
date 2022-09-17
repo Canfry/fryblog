@@ -6,15 +6,21 @@ export default function Navbar() {
 
   return (
     <header className='w-full bg-zinc-900'>
-      <div className='max-w-[90%] m-auto py-4 flex justify-evenly items-center'>
+      <div className='max-w-[90%] md:max-w-[70%] lg:max-w-[90%] m-auto py-4 flex justify-around items-center'>
         <div>
-          <h1 className='text-cyan-500 text-2xl'>Fryblog</h1>
+          <Link href={'/'}>
+            <a className='text-cyan-500 text-2xl'>Fryblog</a>
+          </Link>
         </div>
         <nav>
           <ul className='flex items-center justify-between'>
             <li
-              className={`ml-8 hover:text-cyan-500 ${
-                router.pathname === '/' ? 'text-cyan-200' : 'white'
+              className={`ml-8 hover:text-cyan-500  ${
+                router.pathname === '/' ? 'text-gray-400' : 'white'
+              } ${
+                router.pathname === '/'
+                  ? 'border-b-4 border-cyan-500'
+                  : 'border-none'
               }`}
               name='Home'
             >
@@ -24,7 +30,11 @@ export default function Navbar() {
             </li>
             <li
               className={`ml-8 hover:text-cyan-500 ${
-                router.pathname === '/posts' ? 'text-cyan-500' : 'white'
+                router.pathname === '/posts' ? 'text-gray-400' : 'text-gray-300'
+              } ${
+                router.pathname === '/posts'
+                  ? 'border-b-4 border-cyan-500'
+                  : 'border-none'
               }`}
               name='posts'
             >
@@ -34,7 +44,11 @@ export default function Navbar() {
             </li>
             <li
               className={`ml-8 hover:text-cyan-500 ${
-                router.pathname === '/about' ? 'text-cyan-500' : 'white'
+                router.pathname === '/about' ? 'text-gray-400' : 'text-gray-300'
+              } ${
+                router.pathname === '/about'
+                  ? 'border-b-4 border-cyan-500'
+                  : 'border-none'
               }`}
               name='about'
             >
