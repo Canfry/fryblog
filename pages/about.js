@@ -11,7 +11,7 @@ export default function about() {
           <h1 className='text-2xl lg:text-4xl mb-4'>About</h1>
           <span className='text-cyan-500 text-2xl lg:text-4xl ml-2'>ME</span>
         </div>
-        <p className='leading-8 font-bold text-md font-thin'>
+        <p className='leading-8 text-md font-thin'>
           Hi, My name is Christophe Anfry, I'm french. I live in Barcelona
           (spain). My background is 15 years working in hotels and restaurants.
           Then having my first child I decided that my shifts were not
