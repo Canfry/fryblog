@@ -1,10 +1,14 @@
 import { BsGithub } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Fryblog</title>
+      </Head>
       <div className='text-center max-w-[90%] md:max-w-[70%] lg:max-w-[60%] m-auto text-gray-300'>
         <h1 className='text-3xl xl:text-4xl mb-8 font-bold'>
           Welcome to <span className='font-bold text-cyan-400'>FryBlog</span>

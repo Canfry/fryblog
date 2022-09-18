@@ -1,3 +1,12 @@
+import Head from 'next/head';
+
 export default function posts() {
-  return <div>posts</div>;
+  return (
+    <>
+      <Head>
+        <title>Posts</title>
+      </Head>
+      <div>posts</div>
+    </>
+  );
 }
