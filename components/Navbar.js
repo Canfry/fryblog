@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <header className='w-full bg-zinc-900'>
-      <div className='max-w-[90%] md:max-w-[70%] lg:max-w-[90%] m-auto py-4 flex justify-around items-center'>
+      <div className='max-w-[90%] md:max-w-[70%] lg:max-w-[60%] m-auto py-4 flex justify-between items-center'>
         <div>
           <Link href={'/'}>
             <a className='text-cyan-500 text-2xl'>Fryblog</a>
@@ -16,7 +16,7 @@ export default function Navbar() {
           <ul className='flex items-center justify-between'>
             <li
               className={`ml-8 hover:text-cyan-500  ${
-                router.pathname === '/' ? 'text-gray-400' : 'white'
+                router.pathname === '/' ? 'white' : 'text-gray-400'
               } ${
                 router.pathname === '/'
                   ? 'border-b-4 border-cyan-500'
@@ -30,9 +30,11 @@ export default function Navbar() {
             </li>
             <li
               className={`ml-8 hover:text-cyan-500 ${
-                router.pathname === '/posts' ? 'text-gray-400' : 'text-gray-300'
+                router.pathname === '/posts' && '/posts/*'
+                  ? 'white'
+                  : 'text-gray-400'
               } ${
-                router.pathname === '/posts'
+                router.pathname === '/posts' && '/posts/*'
                   ? 'border-b-4 border-cyan-500'
                   : 'border-none'
               }`}
@@ -44,7 +46,7 @@ export default function Navbar() {
             </li>
             <li
               className={`ml-8 hover:text-cyan-500 ${
-                router.pathname === '/about' ? 'text-gray-400' : 'text-gray-300'
+                router.pathname === '/about' ? 'white' : 'text-gray-400'
               } ${
                 router.pathname === '/about'
                   ? 'border-b-4 border-cyan-500'

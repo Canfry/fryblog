@@ -9,7 +9,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Comfortaa', cursive;
-  background-color: rgb(39 39 42);
+  background: radial-gradient(#27272a 0%, #18181b 60%);
   color: white;
 }
 

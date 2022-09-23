@@ -14,14 +14,14 @@ export default function Home() {
           Welcome to <span className='font-bold text-cyan-400'>FryBlog</span>
         </h1>
         <p className='mb-4 xl:text-lg font-light'>
-          I'll try to cover the most important topics regarding web development.
-          Going from beginner's topics to more advanced ones.
+          I&apos;ll try to cover the most important topics regarding web
+          development. Going from beginner&apos;s topics to more advanced ones.
           <br />
-          You'll find useful informations and links to different influencers or
-          official websites. My goal is to guide you through the understanding
-          of the topics, how to find answers and what tool or framework to use.
-          I'll use concrete exemples, real projects, Github repos, other blogs,
-          streamers to follow...
+          You&apos;ll find useful informations and links to different
+          influencers or official websites. My goal is to guide you through the
+          understanding of the topics, how to find answers and what tool or
+          framework to use. I&apos;ll use concrete exemples, real projects,
+          Github repos, other blogs, streamers to follow...
         </p>
         <div className='text-center mb-6 mt-6'>
           <button className='hover:bg-cyan-500 rounded-md bg-cyan-600 text-white py-2 px-4 mb-4'>
