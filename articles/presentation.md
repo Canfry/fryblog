@@ -14,7 +14,7 @@ Hello everybody, welcome to my blog.
 This is my first real full project in order to become a frontend developer. I know that starting this carrer is tricky and require a lot of dedication.
 Along the way we will discuss about all the topics we're gonna find (Frameworks, GitHub, Ressources...). First, let's talk about this project.
 
-First of all I wanted to create a blog starting by the simpliest way (with local data, and using [React](www.reactjs.org)), and scale it up using different framework, some backend, database...
+I wanted to create a blog starting by the simpliest way (with local data, and using [React](www.reactjs.org)), and scale it up using different framework, some backend, database...
 But after fighting with myself, I've chosen to use [Nextjs](wwww.nextjs.org).
 Following Youtubers or reading articles I saw that markdown files are very popular for static site (more specifically blogs). The best thing would be to use [Astro](www.astro.build), but I keep it for later in my career. This app will probably be an Astro site in a year or less if I work well :joy:.
 
@@ -37,7 +37,7 @@ For me the best code editor on the market, maybe the most popular one. From Micr
 
 ###### Nextjs
 
-Nextjs, the React framework created by [Vercel](https://www.vercel.com), giving you all you need for production. From your terminal in the folder of your choice, you just have to type:
+[Nextjs](wwww.nextjs.org), the React framework created by [Vercel](https://www.vercel.com), giving you all you need for production. From your terminal in the folder of your choice, you just have to type:
 
 ```
 npx create-next-app@latest
