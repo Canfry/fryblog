@@ -65,17 +65,21 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  // console.log(slug);
+  // console.log(slug)
   const markdownWithMeta = fs.readFileSync(
     path.join('articles', slug + '.md'),
     'utf-8'
   );
 
   const { data: frontmatter, content } = matter(markdownWithMeta);
+  // console.log(content);
 
   const processedContent = await remark().use(html).process(content);
+  console.log(processedContent.value);
 
-  const contentHtml = processedContent.toString();
+  const contentHtml = processedContent.value.toString();
+
+  console.log(contentHtml);
 
   return {
     props: {

@@ -5,6 +5,8 @@ import matter from 'gray-matter';
 import Article from '../components/Article';
 import { sortByDate } from '../utils';
 
+// Just add a dummy Article (Sass) for styling purposes
+
 export default function posts({ posts }) {
   console.log(posts);
   return (
